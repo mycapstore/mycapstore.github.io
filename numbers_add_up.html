@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function add() {
+
+	    do {
+	        var x = parseInt(prompt("Please enter a number!"));
+	        var y = parseInt(prompt("Please enter a number!"));
+	        var z = x + y;
+	        var i = false;
+
+	        if (isNaN(x)) {
+	            alert("Invalid entry. Please enter a number!")
+	        } else if (isNaN(y)) {
+	            alert("Invalid entry. Please enter a number!")
+	        } else {
+	            alert(x + " + " + y + " = " + z);
+	            i = true; //get out of loop
+	        }
+	    }
+	    while (i == false);
+	}
+
+	add();
+	</script>
+
+</body>
+</html>

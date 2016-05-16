@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+var person = {
+	firstname: 'Krit',
+	lastname: 'Vinkomin',
+	sayName: function(){
+		console.log(this.firstname + ' ' + this.lastname);
+	}
+};
+
+	console.log(person.sayName);
+
+
+
+//--------------------------//
+// //Call method
+// var person = {
+// 	firstname: 'Krit',
+// 	lastname: 'Vinkomin'
+// };
+
+// var sayName = function(prop1, prop2){
+// 	console.log(this[prop1]);
+// 	console.log(this[prop2]);
+// };
+
+// sayName.call(person,'lastname','firstname');
+
+
+
+
+//--------------------------//
+
+
+// apply method
+var person = {
+	firstname: 'Krit',
+	lastname: 'Vinkomin'
+};
+
+var sayName = function(prop1,prop2){
+	console.log(this[prop1]);
+	console.log(this[prop2]);
+};
+
+var callOrder = function(){
+	sayName.apply(person, arguments);
+};
+
+callOrder('firstname','lastname');
+</script>
+
+</body>
+</html>
