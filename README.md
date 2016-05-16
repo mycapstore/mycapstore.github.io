@@ -1,1 +1,1 @@
-# mycapstore.github.io
+# mycap.github.io
